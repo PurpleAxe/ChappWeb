@@ -16,7 +16,7 @@ public class AuthController {
         return "login";
     }
 
-    @RequestMapping("addLogin")
+    @RequestMapping("/addLogin")
     public String addLoginReq(Child child){
         childrenRepository.save(child);
         return("index");
