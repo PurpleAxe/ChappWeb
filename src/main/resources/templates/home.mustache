@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="MainStyles.css">
+    <title>Chapp - Home</title>
+</head>
+<body class="page">
+<div class="header">
+    <h1>Welcome {{usrname}}</h1>
+</div>
+{{#users}}
+    <b class="buttonaccent">{{name}}</b>
+{{/users}}
+{{^users}}
+    No repo
+{{/users}}
+</body>
+</html>
